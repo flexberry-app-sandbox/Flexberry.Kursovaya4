@@ -1,0 +1,190 @@
+﻿{
+  "name": "IISKursovaya4Покупка",
+  "modelName": "i-i-s-kursovaya4-покупка",
+  "className": "Покупка",
+  "nameSpace": "IIS.Kursovaya4",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "количество",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "сумма",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "базаКлиента",
+      "relatedTo": "i-i-s-kursovaya4-база-клиента",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "ценноваяСтела",
+      "relatedTo": "i-i-s-kursovaya4-ценновая-стела",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "резервуар",
+      "relatedTo": "i-i-s-kursovaya4-резервуар",
+      "inverse": "покупка"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ПокупкаE",
+      "modelName": "i-i-s-kursovaya4-покупка",
+      "attrs": [
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "ЦенноваяСтела",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Ценновая стела",
+          "name": "ценноваяСтела",
+          "relatedTo": "i-i-s-kursovaya4-ценновая-стела",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Логин",
+          "lookupValueField": "логин",
+          "relationName": "БазаКлиента",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "логин",
+              "caption": "Логин",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "База клиента",
+          "name": "базаКлиента",
+          "relatedTo": "i-i-s-kursovaya4-база-клиента",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "РезервуарE",
+          "caption": "Резервуар",
+          "name": "резервуар",
+          "relatedTo": "i-i-s-kursovaya4-резервуар",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ПокупкаL",
+      "modelName": "i-i-s-kursovaya4-покупка",
+      "attrs": [
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ЦенноваяСтела",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование",
+          "name": "ценноваяСтела",
+          "relatedTo": "i-i-s-kursovaya4-ценновая-стела",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "БазаКлиента",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "логин",
+              "caption": "Логин",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Логин",
+          "name": "базаКлиента",
+          "relatedTo": "i-i-s-kursovaya4-база-клиента",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

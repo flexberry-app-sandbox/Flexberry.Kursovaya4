@@ -1,0 +1,78 @@
+﻿{
+  "name": "IISKursovaya4Резервуар",
+  "modelName": "i-i-s-kursovaya4-резервуар",
+  "className": "Резервуар",
+  "nameSpace": "IIS.Kursovaya4",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "idР",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "колвоТоп",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "состояние",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "покупка",
+      "relatedTo": "i-i-s-kursovaya4-покупка",
+      "inverse": "резервуар"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "РезервуарE",
+      "modelName": "i-i-s-kursovaya4-резервуар",
+      "attrs": [
+        {
+          "name": "колвоТоп",
+          "caption": "Колво топ",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "состояние",
+          "caption": "Состояние",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "idР",
+          "caption": "Id Р",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

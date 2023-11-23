@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya4-база-клиента-e",
+  "editForm": "i-i-s-kursovaya4-база-клиента-e",
+  "external": false,
+  "caption": "База клиента",
+  "name": "IISKursovaya4БазаКлиентаL",
+  "className": "БазаКлиентаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya4-база-клиента",
+      "modelProjection": "БазаКлиентаL"
+    }
+  ]
+}

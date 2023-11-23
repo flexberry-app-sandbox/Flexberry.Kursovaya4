@@ -1,0 +1,36 @@
+﻿{
+  "applicationCaption": "Kursovaya4",
+  "applicationTitle": "Kursovaya4",
+  "items": [
+    {
+      "link": null,
+      "menuName": "kursovaya4",
+      "caption": "Kursovaya4",
+      "title": "Kursovaya4",
+      "children": [
+        {
+          "link": "i-i-s-kursovaya4-ценновая-стела-l",
+          "menuName": null,
+          "caption": "Ценновая стела",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya4-база-клиента-l",
+          "menuName": null,
+          "caption": "База клиента",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya4-покупка-l",
+          "menuName": null,
+          "caption": "Покупка",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

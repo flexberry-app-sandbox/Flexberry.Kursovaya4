@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya4-покупка-e",
+  "editForm": "i-i-s-kursovaya4-покупка-e",
+  "external": false,
+  "caption": "Покупка",
+  "name": "IISKursovaya4ПокупкаL",
+  "className": "ПокупкаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya4-покупка",
+      "modelProjection": "ПокупкаL"
+    }
+  ]
+}

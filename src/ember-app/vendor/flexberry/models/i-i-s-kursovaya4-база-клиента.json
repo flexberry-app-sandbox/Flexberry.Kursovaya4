@@ -1,0 +1,117 @@
+﻿{
+  "name": "IISKursovaya4БазаКлиента",
+  "modelName": "i-i-s-kursovaya4-база-клиента",
+  "className": "БазаКлиента",
+  "nameSpace": "IIS.Kursovaya4",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "iDКлиента",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "логин",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерКарты",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "пароль",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "БазаКлиентаE",
+      "modelName": "i-i-s-kursovaya4-база-клиента",
+      "attrs": [
+        {
+          "name": "iDКлиента",
+          "caption": "I d клиента",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "логин",
+          "caption": "Логин",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "пароль",
+          "caption": "Пароль",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "номерКарты",
+          "caption": "Номер карты",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "БазаКлиентаL",
+      "modelName": "i-i-s-kursovaya4-база-клиента",
+      "attrs": [
+        {
+          "name": "iDКлиента",
+          "caption": "I d клиента",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "логин",
+          "caption": "Логин",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "пароль",
+          "caption": "Пароль",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "номерКарты",
+          "caption": "Номер карты",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
